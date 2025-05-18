@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>About Us - Gym BK</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+
+    <!-- slideshow wrapper -->
+    <div class="slideshow-container">
+        <header>
+    <h1 class="site-title">BK Gym</h1>
+    <img src="images/logo-overlay.png" alt="Overlay Image" class="top-right-overlay">
+    <nav>
+        <ul>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="classes.html">Classes</a></li>
+        </ul>
+    </nav>
+</header>
+
+    </div>
+    <!-- /slideshow wrapper -->
+
+    <main>
+        <div class="flex-sections">
+            <section id="about-us">
+    <h2>About Us</h2>
+    <p>Opened in 2023, we are constantly trying to improve the BK Gym experience. With the small amount of 25$ a month, this gym is affordable for all types of people while still maintaining a luxury feel. Check out our Classes!</p>
+    <p>Go to the Membership page to sign up today!</p>
+    <video autoplay muted loop playsinline class="about-image" style="width: 100%; border-radius: 5px;">
+    <source src="videos/about-us.mp4" type="video/mp4">
+</video>
+
+</section>
+
+            <section id="location">
+                <h2>Location</h2>
+                <p>We are located in Brooklyn 11216! Stop by to see the gym and you can even sign up right now on the Membership page!</p>
+                <div id="map" class="map-container"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Gym BK. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Membership Form - Gym BK</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+
+    <!-- slideshow wrapper -->
+    <div class="slideshow-container">
+        <header>
+            <h1 class="site-title">BK Gym</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">About Us</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <!-- /slideshow wrapper -->
+
+    <main>
+        <div class="video-background">
+            <video autoplay muted loop playsinline class="bg-video">
+                <source src="videos/background-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <div class="center-form-container">
+                <section id="membership-form">
+                    <h2>Join BK Gym Today!</h2>
+                    <form id="membershipForm" action="#" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required><br><br>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br><br>
+
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required><br><br>
+
+                        <label for="DOB">Date of Birth:</label>
+                        <input type="date" id="DOB" name="DOB" required><br><br>
+
+                        <label for="cardType">Card Type:</label>
+                        <select id="cardType" name="cardType">
+                            <option value="Amex">Amex</option>
+                            <option value="Discover">Discover</option>
+                            <option value="Visa">Visa</option>
+                            <option value="Mastercard">Mastercard</option>
+                        </select><br><br>
+
+                        <label for="Card">Card Number:</label>
+                        <input type="text" id="Card" name="Card" placeholder="0000-0000-0000-0000" required><br><br>
+
+                        <label for="cvv">CVV Number:</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="000" required><br><br>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Gym BK. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
